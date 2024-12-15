@@ -55,15 +55,15 @@ function updateServiceDetails(serviceType) {
 
     if (serviceType === 'sap') {
         serviceTitle.textContent = 'SAP Consultants';
-        serviceDescription.textContent = 'We offer expert solutions for SAP implementations, customizations, and optimizations to help businesses streamline their operations and improve efficiency.';
+        serviceDescription.textContent = 'At the forefront of digital transformation, we provide cutting-edge SAP solutions tailored to your unique business needs. Our team of seasoned experts specializes in seamless SAP implementations, bespoke customizations, and innovative optimizations designed to enhance operational efficiency and drive sustainable growth. Partner with us to transform your SAP landscape into a powerhouse of productivity and insight. Together, let\'s navigate the complexities of the digital era and propel your organization toward unparalleled success. Experience the difference with our professional services, designed for today\'s global industry leaders.';
     } else if (serviceType === 'netsuite') {
         serviceTitle.textContent = 'Netsuite Consultants';
-        serviceDescription.textContent = 'Our Netsuite consulting services provide businesses with the expertise needed to implement, customize, and maximize the potential of their ERP and financial management systems.';
+        serviceDescription.textContent = 'At the forefront of digital transformation, our Netsuite consulting services empower businesses to harness the full capabilities of their ERP and financial management systems. With a dedicated team of seasoned professionals, we deliver tailored solutions that not only implement and customize Netsuite to your unique needs but also optimize its functionality to drive unparalleled growth and efficiency. Embrace innovation and elevate your operations with our cutting-edge strategies, designed to streamline processes and enhance decision-making. Partner with us to transform your financial landscape and propel your business into the future of success. Your journey to maximizing potential starts here!';
     } else if (serviceType === 'ai') {
         serviceTitle.textContent = 'AI & ML Specialists';
-        serviceDescription.textContent = 'We provide cutting-edge AI and machine learning solutions designed to help businesses leverage data-driven insights and automate processes to stay ahead of the competition.';
+        serviceDescription.textContent = 'Unlock the future of your business with our state-of-the-art AI and machine learning solutions. We empower enterprises to harness the power of data-driven insights and streamline operations through innovative automation. Stay ahead of the curve and transform your competitive landscape with our pioneering technologies designed for the global market. Elevate your business strategy and redefine success with our unparalleled expertise in AI and ML.';
     } else if (serviceType === 'recruitment') {
         serviceTitle.textContent = 'Recruitment Process';
-        serviceDescription.textContent = 'Our recruitment process ensures that you find the best talent quickly and efficiently, using a data-driven approach to match candidates with your organization\'s needs.';
+        serviceDescription.textContent = 'Experience a transformative recruitment process designed to connect you with top-tier talent swiftly and seamlessly. Leveraging cutting-edge, data-driven methodologies, we expertly align candidates with your organization’s unique requirements. Our innovative approach not only streamlines your hiring journey but also ensures that you attract the best minds in the industry. Embrace the future of talent acquisition with us—where precision meets efficiency in every hire.';
     }
 }
