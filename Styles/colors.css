@@ -1,0 +1,10 @@
+/* colors.css */
+
+/* Color Variables */
+:root {
+    --blue-light-bg: #eaf3f9; /* Light Blue Background */
+    --blue-dark: #222c65;    /* Dark Blue */
+    --blue-icon: #5094cf;    /* Icon Blue */
+    --blue-hover: #5195d2;   /* Hover Blue */
+    --off-black :#333333 /* Off-Black */
+}

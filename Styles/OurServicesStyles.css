@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium Web');
+@import url('./colors.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+/* Header Styles */
+/* Default Styles for the Navbar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo img {
+    max-height: 60px;
+    margin-left: 30px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--blue-dark);
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.nav .home-link {
+    font-weight: 600;
+}
+
+.nav a i {
+    font-size: 0.8rem;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0; /* Initially hidden */
+    overflow: hidden; /* Prevent overflow */
+    transition: opacity 0.3s ease, max-height 0.3s ease-in-out; /* Smooth transition */
+    top: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    max-height: 500px; /* Increase the max-height to show the content */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 30px;
+    }
+
+    .logo img {
+        max-height: 50px;
+        margin-left: 0;
+    }
+
+    .nav {
+        display: block;
+        width: 100%;
+        gap: 15px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav a {
+        font-size: 1rem;
+        padding: 8px 8px;
+        display: block;
+    }
+
+    .nav i {
+        display: none;
+    }
+
+    .more-icon {
+        display: none;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: static;
+        box-shadow: none;
+        visibility: visible;
+        max-height: none;
+        opacity: 1;
+    }
+}
+
+/* For very small screens, stack and make adjustments */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .nav a {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    /* Add '|' separator between links */
+    .nav a::after {
+        content: '|';
+        margin-left: 10px;
+    }
+
+    .nav a:last-child::after {
+        content: ''; /* Remove '|' after the last item */
+    }
+
+    .nav .home-link {
+        font-weight: 600;
+    }
+
+    .more-icon {
+        display: none;
+    }
+
+    .dropdown-content a {
+        font-size: 0.9rem;
+    }
+
+    /* Shorten text for small devices */
+    .nav a[href="../Pages/HomePage.html"] {
+        text-transform: none;
+    }
+    .nav a[href="../Pages/AboutUsPage.html"] {
+        text-transform: none;
+    }
+    .nav a[href="../Pages/OurServicesPage.html"] {
+        text-transform: none;
+    }
+    .nav a[href="../Pages/ContactUsPage.html"] {
+        text-transform: none;
+    }
+}
+
+
+
+
+/* Service Details Section */
+.service-details {
+    padding: 50px 30px;
+    background-color: #f8f9fa;
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+.service-detail-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--blue-dark); /* Updated to matching color */
+    margin-bottom: 20px;
+}
+
+.service-detail-description {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Service Cards Section */
+.services-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 30px;
+    background-color: #f8f9fa;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 22%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: var(--blue-dark); /* Updated to matching color */
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blue-dark); /* Updated to matching color */
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Selected card style */
+.service-card.selected {
+    background-color: var(--blue-dark); /* Selected card background */
+    color: #fff; /* Text color when selected */
+}
+
+.service-card.selected i,
+.service-card.selected h3,
+.service-card.selected p {
+    color: #fff; /* Text color inside selected card */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .service-card {
+        width: 45%; /* Stack two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: 100%; /* Full width for very small screens */
+    }
+}
+
+
+
+/* Footer Styles */
+/* Footer Base Styles */
+.footer {
+    background-color: var(--blue-dark); /* Dark Blue Background */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Adds spacing between sections */
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    width: 30%;
+}
+
+.footer-left {
+    width: 40%; /* Left section takes 40% */
+}
+
+.footer-logo {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-left: 20%;
+    display: flex;
+    gap: 15px;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007BFF; /* Blue hover effect */
+}
+
+.footer-middle h3,
+.footer-right h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-middle ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-middle a:hover {
+    color: #007BFF;
+}
+
+.footer-middle i,
+.footer-right i {
+    margin-right: 8px;
+}
+
+.footer-right p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.back-to-top {
+    display: none;
+    gap: 10px;
+    font-size: 1.8rem;
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+.back-to-top i{
+    color:rgba(255, 255, 255, 0.6);
+}
+
+.back-to-top:hover .back-to-top i {
+    transform: translateY(-5px); /* Darker background on hover */
+}
+/* Responsive Adjustments */
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: flex; /* Use flexbox for alignment */
+        justify-content: center;
+        align-items: center;
+        padding: 10px 80px; /* Reduce padding for smaller screens */
+        text-align: center; /* Center align content */
+    }
+
+    .footer-container {
+        display: flex; /* Use flexbox for alignment */
+        justify-content: center; /* Space between logo and icons */
+        align-items: center; /* Align content vertically */
+        flex-direction: row; /* Arrange items horizontally */
+    }
+
+    .footer-left {
+        display: flex; /* Use flex to align logo and icons horizontally */
+        justify-content: center; /* Align items to the left */
+        align-items: center; /* Align items vertically in the center */
+        gap: 0px; /* Add space between logo and icons */
+    }
+
+    .footer-logo {
+        max-width: 200px; /* Adjust logo size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .social-links {
+        display: flex; /* Show social links */
+        gap: 15px; /* Space between icons */
+        font-size: 1.8rem; /* Adjust icon size */
+    }
+
+    .back-to-top {
+        display: flex; /* Make the icon visible */
+    }
+    .footer-middle,
+    .footer-right {
+        display: none; /* Hide the middle and right sections */
+    }
+}

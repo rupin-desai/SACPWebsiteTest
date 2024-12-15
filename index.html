@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Home</title>
+
+    <!-- Meta Redirect (change "home.html" to your actual home page URL) -->
+    <meta http-equiv="refresh" content="0; url='./Pages/HomePage.html'">
+
+    <!-- Fallback for Meta Redirect -->
+    <script>
+        // JavaScript fallback in case meta redirect doesn't work
+        window.location.href = "./Pages/HomePage.html";
+    </script>
+
+    <!-- Basic Style -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: var(--blue-light-bg, #eaf3f9);
+            color: var(--blue-dark, #222c65);
+        }
+
+        .message {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <h1>Redirecting to Home Page...</h1>
+        <p>If you are not redirected automatically, <a href="./Pages/HomePage.html">click here</a>.</p>
+    </div>
+</body>
+</html>
