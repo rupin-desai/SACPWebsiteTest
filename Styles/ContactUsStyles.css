@@ -289,6 +289,7 @@ body {
 @media screen and (max-width: 480px) {
     .contact {
         padding: unset; /* Reduce padding further on very small screens */
+        padding-bottom: 20px;
     }
     
     .contact .left img {
@@ -299,13 +300,14 @@ body {
     .contact h2 {
         font-size: 1.6rem; /* Further reduce heading size */
         margin-bottom: 10px;
+        padding-left: 20px;
         
     }
 
     .contact p {
         font-size: 0.9rem; /* Further reduce paragraph size */
-        margin-bottom: 10%;
-        line-height: 8px;
+        padding-bottom: 5px;
+        padding-left: 20px;
     }
 }
 
@@ -344,8 +346,8 @@ body {
 
 
 .contact-form-section {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
+    background-color: var(--blue-light-bg);
+    padding: 40px 50px;
     margin-top: 50px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -409,7 +411,13 @@ body {
     min-height: 150px;
 }
 
-
+@media screen and (max-width: 480px){
+    .contact-form-section{
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 
 
 
