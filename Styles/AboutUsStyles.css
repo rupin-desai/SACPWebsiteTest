@@ -858,13 +858,13 @@ font-weight: 300;
 /* Adjust grid for smaller screens */
 @media (max-width: 1500px) {
     .team-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+        grid-template-columns: repeat(1, 1fr); /* 3 cards per row */
     }
 }
 
 @media (max-width: 1024px) {
     .team-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        grid-template-columns: repeat(1, 1fr); /* 2 cards per row */
     }
 
     .team-card {
@@ -897,7 +897,7 @@ font-weight: 300;
 
 @media (max-width: 768px) {
     .team-container {
-        grid-template-columns: repeat(2, 1fr); /* 4 cards per row on mobile */
+        grid-template-columns: repeat(1, 1fr); /* 4 cards per row on mobile */
         
     }
 
@@ -936,7 +936,7 @@ font-weight: 300;
 
 @media (max-width: 480px) {
     .team-container {
-        grid-template-columns: repeat(2, 1fr); /* 4 cards per row for small phones */
+        grid-template-columns: repeat(1, 1fr); /* 4 cards per row for small phones */
     }
 
     .team-card {
