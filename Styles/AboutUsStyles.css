@@ -746,6 +746,7 @@ font-weight: 300;
 .our-team {
     text-align: center;
     padding: 20px 0;
+    padding-top: unset;
 }
 
 .our-team h2 {
@@ -765,7 +766,7 @@ font-weight: 300;
 
 .team-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
+    grid-template-columns: repeat(1, 1fr); /* Four cards per row */
     row-gap: 30px; /* Space between cards */
     column-gap: 0px;
     justify-items: center;
@@ -776,6 +777,7 @@ font-weight: 300;
     border-radius: 25px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    margin-bottom: 45px;
     width: 350px; /* Card width */
     height: 400px; /* Card height */
     text-align: center;
