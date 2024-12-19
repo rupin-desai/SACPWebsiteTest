@@ -14,8 +14,9 @@ body {
     line-height: 1.6;
     color: #333;
 }
-/* Header Styles */
-/* Default Styles for the Navbar */
+/* Header Styles ------------------------------------------------------- */
+.header-section{
+    /* Default Styles for the Navbar */
 .header {
     display: flex;
     justify-content: space-between;
@@ -198,109 +199,112 @@ body {
     }
 }
 
-
-
-
-/* Service Details Section */
-.service-details {
-    padding: 50px 30px;
-    background-color: #f8f9fa;
-    text-align: center;
-    display: none; /* Initially hidden */
-}
-
-.service-detail-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--blue-dark); /* Updated to matching color */
-    margin-bottom: 20px;
-}
-
-.service-detail-description {
-    font-size: 1.2rem;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-/* Service Cards Section */
-.services-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 50px 30px;
-    background-color: #f8f9fa;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 
-.service-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
-    width: 22%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.service-card i {
-    font-size: 3rem;
-    color: var(--blue-dark); /* Updated to matching color */
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--blue-dark); /* Updated to matching color */
-    margin-bottom: 15px;
-}
-
-.service-card p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
-}
-
-/* Selected card style */
-.service-card.selected {
-    background-color: var(--blue-dark); /* Selected card background */
-    color: #fff; /* Text color when selected */
-}
-
-.service-card.selected i,
-.service-card.selected h3,
-.service-card.selected p {
-    color: #fff; /* Text color inside selected card */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .service-card {
-        width: 45%; /* Stack two cards per row on smaller screens */
+/* Services Section ------------------------------------------------------- */
+.our-services-section{
+    .service-details {
+        padding: 50px 30px;
+        background-color: #f8f9fa;
+        text-align: center;
+        display: none; /* Initially hidden */
     }
-}
-
-@media (max-width: 480px) {
-    .service-card {
-        width: 100%; /* Full width for very small screens */
+    
+    .service-detail-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--blue-dark); /* Updated to matching color */
+        margin-bottom: 20px;
     }
+    
+    .service-detail-description {
+        font-size: 1.2rem;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+    
+    /* Service Cards Section */
+    .services-section {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 50px 30px;
+        background-color: #f8f9fa;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    
+    .service-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 30px;
+        text-align: center;
+        width: 22%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .service-card i {
+        font-size: 3rem;
+        color: var(--blue-dark); /* Updated to matching color */
+        margin-bottom: 20px;
+    }
+    
+    .service-card h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--blue-dark); /* Updated to matching color */
+        margin-bottom: 15px;
+    }
+    
+    .service-card p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 20px;
+    }
+    
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Selected card style */
+    .service-card.selected {
+        background-color: var(--blue-dark); /* Selected card background */
+        color: #fff; /* Text color when selected */
+    }
+    
+    .service-card.selected i,
+    .service-card.selected h3,
+    .service-card.selected p {
+        color: #fff; /* Text color inside selected card */
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .service-card {
+            width: 45%; /* Stack two cards per row on smaller screens */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .service-card {
+            width: 100%; /* Full width for very small screens */
+        }
+    }
+    
+    
 }
 
-
-
-/* Footer Styles */
-/* Footer Base Styles */
+/* Footer Styles ------------------------------------------------------- */
+.footer-section{
+    /* Footer Base Styles */
 .footer {
     background-color: var(--blue-dark); /* Dark Blue Background */
     color: #fff;
@@ -443,4 +447,5 @@ body {
     .footer-right {
         display: none; /* Hide the middle and right sections */
     }
+}
 }

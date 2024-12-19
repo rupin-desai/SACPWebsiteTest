@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700;900&display=swap');
+@import url('./colors.css');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Section Styles -------------------------------------------------------*/
+.header-section {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+    .logo img {
+        max-height: 60px;
+        margin-left: 30px;
+    }
+
+    .nav {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: var(--blue-dark);
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+
+    .nav .home-link {
+        font-weight: 600;
+    }
+
+    .nav a i {
+        font-size: 0.8rem;
+    }
+
+    /* Dropdown Menu Styles */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: block;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        /* Initially hidden */
+        overflow: hidden;
+        /* Prevent overflow */
+        transition: opacity 0.3s ease, max-height 0.3s ease-in-out;
+        /* Smooth transition */
+        top: 100%;
+    }
+
+    .dropdown:hover .dropdown-content {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+        /* Increase the max-height to show the content */
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-weight: 400;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    /* Responsive adjustments for mobile devices */
+    @media screen and (max-width: 768px) {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 15px 30px;
+        }
+
+        .logo img {
+            max-height: 50px;
+            margin-left: 0;
+        }
+
+        .nav {
+            display: block;
+            width: 100%;
+            gap: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .nav a {
+            font-size: 1rem;
+            padding: 8px 8px;
+            display: block;
+        }
+
+        .nav i {
+            display: none;
+        }
+
+        .more-icon {
+            display: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: static;
+            box-shadow: none;
+            visibility: visible;
+            max-height: none;
+            opacity: 1;
+        }
+    }
+
+    /* For very small screens, stack and make adjustments */
+    @media screen and (max-width: 480px) {
+        .header {
+            padding: 10px 15px;
+        }
+
+        .nav a {
+            font-size: 0.9rem;
+            padding: 8px 0;
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        /* Add '|' separator between links */
+        .nav a::after {
+            content: '|';
+            margin-left: 10px;
+        }
+
+        .nav a:last-child::after {
+            content: '';
+            /* Remove '|' after the last item */
+        }
+
+        .nav .home-link {
+            font-weight: 600;
+        }
+
+        .more-icon {
+            display: none;
+        }
+
+        .dropdown-content a {
+            font-size: 0.9rem;
+        }
+
+        /* Shorten text for small devices */
+        .nav a[href="../Pages/HomePage.html"] {
+            text-transform: none;
+        }
+
+        .nav a[href="../Pages/AboutUsPage.html"] {
+            text-transform: none;
+        }
+
+        .nav a[href="../Pages/OurServicesPage.html"] {
+            text-transform: none;
+        }
+
+        .nav a[href="../Pages/ContactUsPage.html"] {
+            text-transform: none;
+        }
+    }
+
+}
+
+/* About Us Section Styles -------------------------------------------------------*/
+
+.about-us-section {
+    .about-us {
+        padding: 50px 20px;
+        padding-left: 4%;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+
+    .about-us h2 {
+        font-size: 1.2rem;
+        color: var(--blue-dark);
+        margin-bottom: 10px;
+        font-weight: lighter;
+    }
+
+    .about-us h3 {
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    .about-us .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        /* Allow wrapping on smaller screens */
+    }
+
+    .about-us .images {
+        display: grid;
+        max-width: 600px;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 equal-width columns */
+        grid-template-rows: auto;
+        gap: 15px;
+        position: relative;
+    }
+
+    .about-us .images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .about-us .images img:nth-child(2) {
+        margin-top: 28px;
+        margin-left: 8px;
+        max-width: 244px;
+        max-height: 217px;
+    }
+
+    .about-us .images img:nth-child(3) {
+        margin-left: 20px;
+        max-width: 174px;
+        max-height: 210px;
+    }
+
+    .about-us .images img:nth-child(1) {
+        max-width: 312px;
+        z-index: 2;
+    }
+
+    .about-us .images img:nth-child(4) {
+        max-width: 312px;
+        height: 312px;
+        margin-top: -90px;
+        margin-left: -100px;
+        z-index: 3;
+    }
+
+    .about-us .text {
+        margin-right: 50px;
+        margin-top: 100px;
+        margin-left: 0px;
+        flex: 1;
+        text-align: left;
+
+
+    }
+
+    .about-us .text h4 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: -150px;
+        line-height: 30px;
+        margin-left: -10px;
+        color: var(--blue-dark);
+
+    }
+
+    .about-us .text h5 {
+        font-size: 1.2rem;
+
+    }
+
+    .about-us .text .column i {
+        font-size: 1rem;
+        /* Adjust the size of the icon */
+        color: var(--blue-dark);
+        /* Dark blue color */
+        vertical-align: middle;
+        /* Align the icon with the text */
+        vertical-align: -1.5px;
+        fill: var(--blue-dark);
+    }
+
+    .about-us .text h1 {
+        font-weight: 700;
+        font-size: 56px;
+        letter-spacing: -1.5px;
+        line-height: 60px;
+    }
+
+    .about-us .text .about-us-subtext {
+        color: var(--blue-dark);
+    }
+
+    .two-columns {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+        /* Adjusts the gap between the paragraphs */
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .two-columns p {
+        flex: 1;
+        text-align: left;
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .learn-more-button {
+        display: inline-block;
+        margin-left: 2%;
+        margin-top: 30px;
+        padding: 12px 30px;
+        background-color: var(--blue-dark);
+        /* Adjust based on your color scheme */
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: transform 0.5s ease, background-color 0.3s ease;
+    }
+
+    .learn-more-button:hover {
+        text-decoration: underline;
+
+    }
+
+    /* Responsive adjustments */
+    /* Responsive adjustments for devices with max-width 768px */
+    @media screen and (max-width: 1200px) {}
+
+    @media screen and (max-width: 768px) {
+        .about-us {
+            padding-left: 5%;
+            padding: 30px 20px;
+        }
+
+        .about-us h2 {
+            font-size: 1.5rem;
+        }
+
+        .about-us h3 {
+            font-size: 1.2rem;
+        }
+
+        .about-us .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Center all content */
+            text-align: center;
+        }
+
+        .about-us .images {
+            order: 1;
+            /* Images appear first */
+            grid-template-columns: 1fr;
+            /* Stack images vertically */
+            gap: 10px;
+            max-width: 80%;
+            /* Limit image width */
+        }
+
+        .about-us .images img {
+            max-width: 100%;
+            /* Full-width images */
+            margin: 0 auto;
+        }
+
+        /* Hide second and fourth images on small screens */
+        .about-us .images img:nth-child(2),
+        .about-us .images img:nth-child(4) {
+            display: none;
+        }
+
+        .about-us .text h4 {
+            order: 3;
+            margin: unset;
+            font-size: px;
+            margin-top: unset;
+        }
+
+        .about-us .text {
+            order: 2;
+            /* Text appears second */
+            margin: 0 auto;
+            /* Center the text container */
+            padding: 15px;
+            text-align: center;
+            /* Center text horizontally */
+        }
+
+
+
+        .about-us .text h5 {
+            font-size: 1rem;
+        }
+
+        .two-columns {
+            margin-left: unset;
+            padding: unset;
+            text-align: left;
+        }
+
+        .two-columns p {
+            font-size: 1rem;
+        }
+
+        .about-us .text h1 {
+            font-size: 40px;
+            line-height: 45px;
+        }
+
+        .learn-more-button {
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
+    }
+
+    /* Responsive adjustments for devices with max-width 480px */
+    @media screen and (max-width: 480px) {
+        .about-us {
+            padding: 30px 15px;
+        }
+
+        .about-us h2 {
+            font-size: 1rem;
+        }
+
+        .about-us h3 {
+            font-size: 1rem;
+        }
+
+        .about-us .container {
+            flex-direction: column;
+            align-items: center;
+            /* Center all content */
+            text-align: center;
+        }
+
+        .about-us .images {
+            order: 1;
+            /* Images appear first */
+            grid-template-columns: 1fr;
+            max-width: 200px;
+            padding-bottom: 0px;
+        }
+
+        /* Hide all images except the first on very small screens */
+        .about-us .images img:nth-child(2),
+        .about-us .images img:nth-child(3),
+        .about-us .images img:nth-child(4) {
+            display: none;
+        }
+
+        .about-us .images img:nth-child(1) {
+            max-width: 100%;
+            margin-top: 0;
+        }
+
+        .about-us .text {
+            order: 2;
+            /* Text appears second */
+            margin: 0 auto;
+            /* Center the text container */
+            padding: 15px;
+            padding-top: 0px;
+            text-align: center;
+            /* Center text horizontally */
+        }
+
+        .about-us .text h4 {
+            margin-top: unset;
+            font-size: 16px;
+            margin-left: unset;
+        }
+
+        .about-us .text h5 {
+            font-size: 0.7rem;
+        }
+
+        .two-columns p {
+            font-size: 0.7rem;
+        }
+
+        .about-us .text h1 {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        .learn-more-button {
+            font-size: 0.7rem;
+            padding: 10px 10px;
+        }
+    }
+
+}
+
+
+/* Footer Section Styles -------------------------------------------------------*/
+
+.footer-section {
+    .footer {
+        background-color: var(--blue-dark);
+        /* Dark Blue Background */
+        color: #fff;
+        padding: 40px 20px;
+        text-align: left;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+        /* Adds spacing between sections */
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        width: 30%;
+    }
+
+    .footer-left {
+        width: 40%;
+        /* Left section takes 40% */
+    }
+
+    .footer-logo {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        margin-left: 20%;
+        display: flex;
+        gap: 15px;
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    .social-links a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+        color: #007BFF;
+        /* Blue hover effect */
+    }
+
+    .footer-middle h3,
+    .footer-right h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .footer-middle ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-middle ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-middle a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+    }
+
+    .footer-middle a:hover {
+        color: #007BFF;
+    }
+
+    .footer-middle i,
+    .footer-right i {
+        margin-right: 8px;
+    }
+
+    .footer-right p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .back-to-top {
+        display: none;
+        gap: 10px;
+        font-size: 1.8rem;
+        transition: background-color 0.3s ease;
+        /* Smooth transition for background */
+    }
+
+    .back-to-top i {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .back-to-top:hover .back-to-top i {
+        transform: translateY(-5px);
+        /* Darker background on hover */
+    }
+
+    /* Responsive Adjustments */
+
+    @media screen and (max-width: 768px) {
+        .footer {
+            display: flex;
+            /* Use flexbox for alignment */
+            justify-content: center;
+            align-items: center;
+            padding: 10px 80px;
+            /* Reduce padding for smaller screens */
+            text-align: center;
+            /* Center align content */
+        }
+
+        .footer-container {
+            display: flex;
+            /* Use flexbox for alignment */
+            justify-content: center;
+            /* Space between logo and icons */
+            align-items: center;
+            /* Align content vertically */
+            flex-direction: row;
+            /* Arrange items horizontally */
+        }
+
+        .footer-left {
+            display: flex;
+            /* Use flex to align logo and icons horizontally */
+            justify-content: center;
+            /* Align items to the left */
+            align-items: center;
+            /* Align items vertically in the center */
+            gap: 0px;
+            /* Add space between logo and icons */
+        }
+
+        .footer-logo {
+            max-width: 200px;
+            /* Adjust logo size for smaller screens */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        .social-links {
+            display: flex;
+            /* Show social links */
+            gap: 15px;
+            /* Space between icons */
+            font-size: 1.8rem;
+            /* Adjust icon size */
+        }
+
+        .back-to-top {
+            display: flex;
+            /* Make the icon visible */
+        }
+
+        .footer-middle,
+        .footer-right {
+            display: none;
+            /* Hide the middle and right sections */
+        }
+    }
+}

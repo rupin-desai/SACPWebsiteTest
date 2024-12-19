@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,218 +14,237 @@
     <!-- Typed.js Script for Animation-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  
+
 </head>
+
 <body>
-<!-- Header -->
-<header class="header" id="header">
-    <div class="logo">
-        <img src="../Assests/sacp6Copy.png" alt="SACP Logo">
+    <!-- Header Section ------------------------------------------------------- -->
+    <div class="header-section">
+        <header class="header" id="header">
+            <div class="logo">
+                <img src="../Assests/sacp6Copy.png" alt="SACP Logo">
+            </div>
+            <nav class="nav">
+
+                <div class="dropdown">
+                    <a href="../Pages/HomePage.html" class="home-link">Home <i
+                            class="material-icons">expand_more</i></a>
+                    <div class="dropdown-content">
+                        <a href="../Pages/HomePage.html#about">About</a>
+                        <a href="../Pages/HomePage.html#services">Services</a>
+                        <a href="../Pages/HomePage.html#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="../Pages/AboutUsPage.html" class="about-link">About Us <i
+                            class="material-icons">expand_more</i></a>
+                    <div class="dropdown-content">
+                        <a href="../Pages/AboutUsPage.html#about">About Us</a>
+                        <a href="../Pages/AboutUsPage.html#mission">Our Mission</a>
+                        <a href="../Pages/AboutUsPage.html#vision">Our Vision</a>
+                        <a href="../Pages/AboutUsPage.html#team">Our Team</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="../Pages/OurServicesPage.html" class="about-link">Services</a>
+                    <div class="dropdown-content">
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="../Pages/CareersPage.html">Careers</a>
+                </div>
+                <div class="dropdown">
+                    <a href="../Pages/ContactUsPage.html">Contact</a>
+                </div>
+
+
+            </nav>
+        </header>
     </div>
-    <nav class="nav">
+    <!-- Hero Section ------------------------------------------------------- -->
+    <div class="hero-section">
+        <section class="hero">
 
-        <div class="dropdown">
-            <a href="../Pages/HomePage.html" class="home-link">Home <i class="material-icons">expand_more</i></a>
-            <div class="dropdown-content">
-                <a href="../Pages/HomePage.html#about">About</a>
-                <a href="../Pages/HomePage.html#services">Services</a>
-                <a href="../Pages/HomePage.html#contact">Contact</a>
+            <div class="text-container">
+                <p class="hero-small">Welcome to <span class="logo-text">SA<span class="logo-c">C</span>P</span></p>
+                <h1 class="hero-title">Shaping The Future</h1>
+                <h1 class="hero-title">Leading The Way Together</h1>
+                <div id="typed-output"></div> <!-- Dynamic typing text -->
+                <!-- Explore Button -->
+                <a href="#about">
+                    <button class="explore-button" id="exploreBtn">
+                        Explore
+                        <i class="material-icons">arrow_downward</i>
+                    </button>
+                </a>
             </div>
-        </div>
+        </section>
+    </div>
 
-            <div class="dropdown">
-                <a href="../Pages/AboutUsPage.html" class="about-link">About Us <i class="material-icons">expand_more</i></a>
-                <div class="dropdown-content">
-                    <a href="../Pages/AboutUsPage.html#about">About Us</a>
-                    <a href="../Pages/AboutUsPage.html#mission">Our Mission</a>
-                    <a href="../Pages/AboutUsPage.html#vision">Our Vision</a>
-                    <a href="../Pages/AboutUsPage.html#team">Our Team</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="../Pages/OurServicesPage.html" class="about-link">Services</a>
-                <div class="dropdown-content">
-                </div>
-            </div>
-        <div class="dropdown">
-            <a href="../Pages/ContactUsPage.html">Contact</a>
-        </div>
-
-    </nav>
-</header>
-
-
-
-    <!-- Hero Section -->
-    <section class="hero">
-        
-        <div class="text-container">
-            <p class="hero-small">Welcome to <span class="logo-text">SA<span class="logo-c">C</span>P</span></p>
-            <h1 class="hero-title">Shaping The Future</h1>
-            <h1 class="hero-title">Leading The Way Together</h1>
-            <div id="typed-output"></div> <!-- Dynamic typing text -->
-            <!-- Explore Button -->
-            <a href="#about">
-            <button class="explore-button" id="exploreBtn">
-                Explore
-                <i class="material-icons">arrow_downward</i>
-            </button>
-            </a>
-        </div>
-    </section>
-
-    <!-- About Us Section with updated layout -->
-    <section class="about-us" id="about">
-        <!-- <h2>Who are we?</h2>
+    <!-- About Us Section ------------------------------------------------------- -->
+    <div class="about-us-section">
+        <section class="about-us" id="about">
+            <!-- <h2>Who are we?</h2>
         <h3>Where it starts: Discovering purpose, Delivering Experience</h3> -->
-        <div class="container">
-            
-            <div class="text">
-                
-                <h4>ABOUT US<i class="material-icons">arrow_outward</i></h4>
-                <h1>Embedded Partnerships,</h1>
-                <h1 class="about-us-subtext">Tranformative Journey Ahead Together</h1>
-                <div class="two-columns">
-                    
-                    <div class="column">
-                        <h5><i class="material-icons">check_box</i>Experienced Pioneers</h5>
-                        <p class="left">Led by industry veterans with senior-level expertise from global giants like SAP, SACP leverages over a decade of excellence 
-                            to drive impactful initiatives and deliver measurable results.</p>
+            <div class="container">
+
+                <div class="text">
+
+                    <h4>ABOUT US<i class="material-icons">arrow_outward</i></h4>
+                    <h1>Embedded Partnerships,</h1>
+                    <h1 class="about-us-subtext">Tranformative Journey Ahead Together</h1>
+                    <div class="two-columns">
+
+                        <div class="column">
+                            <h5><i class="material-icons">check_box</i>Experienced Pioneers</h5>
+                            <p class="left">Led by industry veterans with senior-level expertise from global giants
+                                like SAP, SACP leverages over a decade of excellence
+                                to drive impactful initiatives and deliver measurable results.</p>
+                        </div>
+                        <div class="column">
+                            <h5><i class="material-icons">check_box</i>Prestigious Collaborations</h5>
+                            <p class="right">SACP, partnered with top-tier organizations like Capgemini and Alta Via
+                                globally,
+                                excels in forming specialized Customer Extension Teams (CET) that seamlessly
+                                integrate with our clients' teams. With expertise in SAP and NetSuite initiatives,
+                                we have successfully delivered challenging projects worldwide.</p>
+                        </div>
+
                     </div>
-                    <div class="column">
-                        <h5><i class="material-icons">check_box</i>Prestigious Collaborations</h5>
-                        <p class="right">SACP, partnered with top-tier organizations like Capgemini and Alta Via globally, 
-                            excels in forming specialized Customer Extension Teams (CET) that seamlessly integrate with our clients' teams. With expertise in SAP and NetSuite initiatives, 
-                            we have successfully delivered challenging projects worldwide.</p>
+                    <a href="../Pages/AboutUsPage.html" class="learn-more-button">Learn More</a>
+
+                </div>
+                <div class="images">
+                    <img src="../Assests/topleft.png" alt="Image 1">
+                    <img src="../Assests/top-right.png" alt="Image 2">
+                    <img src="../Assests/bottom-left.png" alt="Image 3">
+                    <img src="../Assests/bottom-right.png" alt="Image 4">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Our Services Section ------------------------------------------------------- -->
+    <div class="services-section">
+        <section class="services" id="services">
+            <div class="services-content">
+                <div class="text-content">
+                    <h2>WHAT WE OFFER<i class="material-icons">arrow_outward</i></h2>
+                    <h3>Managed Services Tailored to Your Needs</h3>
+                </div>
+                <div class="service-card-container">
+                    <div class="service-card">
+                        <i class="material-icons">devices</i>
+                        <h3>NetSuite Consultants</h3>
+                        <p>We play the role of NetSuite specialists in your esteemed project.</p>
+                        <a href="OurServicesPage.html?service=netsuite" class="learn-more">Learn More</a>
                     </div>
-
-                </div>
-                <a href="../Pages/AboutUsPage.html" class="learn-more-button">Learn More</a>
-
-            </div>
-            <div class="images">
-                <img src="../Assests/topleft.png" alt="Image 1">
-                <img src="../Assests/top-right.png" alt="Image 2">
-                <img src="../Assests/bottom-left.png" alt="Image 3">
-                <img src="../Assests/bottom-right.png" alt="Image 4">
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Services Section -->
-    <section class="services" id="services">
-        <div class="services-content">
-            <div class="text-content">
-                <h2>WHAT WE OFFER<i class="material-icons">arrow_outward</i></h2>
-                <h3>Managed Services Tailored to Your Needs</h3>
-            </div>
-            <div class="service-card-container">
-                <div class="service-card">
-                    <i class="material-icons">devices</i>
-                    <h3>NetSuite Consultants</h3>
-                    <p>We play the role of NetSuite specialists in your esteemed project.</p>
-                    <a href="OurServicesPage.html?service=netsuite" class="learn-more">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <i class="material-icons">business_center</i>
-                    <h3>SAP Consultants</h3>
-                    <p>Harness the full capabilities of SAP with our team of professional consultants.</p>
-                    <a href="OurServicesPage.html?service=sap" class="learn-more">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <i class="material-icons">analytics</i>
-                    <h3>AI & ML Specialists</h3>
-                    <p>Leveraging AI and ML to create innovative, data-driven business solutions.</p>
-                    <a href="OurServicesPage.html?service=ai" class="learn-more">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <i class="material-icons">person_search</i>
-                    <h3>Recruitment Process</h3>
-                    <p>Streamlining recruitment to connect your business with top talent efficiently.</p>
-                    <a href="OurServicesPage.html?service=recruitment" class="learn-more">Learn More</a>
+                    <div class="service-card">
+                        <i class="material-icons">business_center</i>
+                        <h3>SAP Consultants</h3>
+                        <p>Harness the full capabilities of SAP with our team of professional consultants.</p>
+                        <a href="OurServicesPage.html?service=sap" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="material-icons">analytics</i>
+                        <h3>AI & ML Specialists</h3>
+                        <p>Leveraging AI and ML to create innovative, data-driven business solutions.</p>
+                        <a href="OurServicesPage.html?service=ai" class="learn-more">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <i class="material-icons">person_search</i>
+                        <h3>Recruitment Process</h3>
+                        <p>Streamlining recruitment to connect your business with top talent efficiently.</p>
+                        <a href="OurServicesPage.html?service=recruitment" class="learn-more">Learn More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- New Partner Section -->
-    <section class="partner-section">
-        <div class="left">
-            Embedded Partner of:
-        </div>
-        <div class="right">
-            <img src="../Assests/sacpfull.png" alt="Partner Logo">
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <!-- Left Section with Image -->
+    <!-- New Partner Section ------------------------------------------------------- -->
+    <div class="our-partner-section">
+        <section class="partner-section">
             <div class="left">
-                <img src="../Assests/Contact_Person.png" alt="Contact Image">
+                Embedded Partner of:
             </div>
-            <!-- Right Section with Text -->
             <div class="right">
-                <h2>Contact Us</h2>
-                <p>For enquiries, send an email at <a href="mailto:info@sacpglobal.com">info@sacpglobal.com</a>.</p>
+                <img src="../Assests/sacpfull.png" alt="Partner Logo">
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- Left Section: Logo and Social Media Links with Icons -->
-            <div class="footer-left">
-                <img src="../Assests/sacpfull_white.png" alt="SACP Logo" class="footer-logo">
-                <div class="social-links">
-                    <!-- LinkedIn Icon -->
-                    <a href="https://www.linkedin.com/company/sacp-global-pvt-ltd/" 
-                       target="_blank" 
-                       title="LinkedIn" 
-                       class="linkedin">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <!-- Mail Icon -->
-                    <a href="mailto:info@sacpglobal.com" 
-                       title="Mail" 
-                       class="mail">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <!-- Mail Icon -->
-                    <a href="#header" class="back-to-top" title="Back to Top">
-                        <i class="fas fa-arrow-circle-up"></i>
-                    </a>
+    <!-- Contact Section ------------------------------------------------------- -->
+    <div class="contact-section">
+        <section class="contact" id="contact">
+            <div class="container">
+                <!-- Left Section with Image -->
+                <div class="left">
+                    <img src="../Assests/Contact_Person.png" alt="Contact Image">
+                </div>
+                <!-- Right Section with Text -->
+                <div class="right">
+                    <h2>Contact Us</h2>
+                    <p>For enquiries, send an email at <a href="mailto:info@sacpglobal.com">info@sacpglobal.com</a>.
+                    </p>
                 </div>
             </div>
-    
-            <!-- Middle Section: Page Links in Vertical Manner -->
-            <div class="footer-middle">
-                <h3>Pages</h3>
-                <ul>
-                    <li><a href="../Pages/HomePage.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="../Pages/AboutUsPage.html"><i class="fas fa-info-circle"></i> About Us</a></li>
-                    <li><a href="../Pages/OurServicesPage.html"><i class="fas fa-cogs"></i> Services</a></li>
-                    <li><a href="../Pages/ContactUsPage.html"><i class="fas fa-address-book"></i> Contact</a></li>
-                </ul>
+        </section>
+    </div>
+
+    <!-- Footer ------------------------------------------------------- -->
+    <div class="footer-section">
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Left Section: Logo and Social Media Links with Icons -->
+                <div class="footer-left">
+                    <img src="../Assests/sacpfull_white.png" alt="SACP Logo" class="footer-logo">
+                    <div class="social-links">
+                        <!-- LinkedIn Icon -->
+                        <a href="https://www.linkedin.com/company/sacp-global-pvt-ltd/" target="_blank" title="LinkedIn"
+                            class="linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <!-- Mail Icon -->
+                        <a href="mailto:info@sacpglobal.com" title="Mail" class="mail">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <!-- Mail Icon -->
+                        <a href="#header" class="back-to-top" title="Back to Top">
+                            <i class="fas fa-arrow-circle-up"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Middle Section: Page Links in Vertical Manner -->
+                <div class="footer-middle">
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href="../Pages/HomePage.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="../Pages/AboutUsPage.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="../Pages/OurServicesPage.html"><i class="fas fa-cogs"></i> Services</a></li>
+                        <li><a href="../Pages/CareersPage.html"><i class="fas fa-briefcase"></i> Careers</a></li>
+                        <li><a href="../Pages/ContactUsPage.html"><i class="fas fa-address-book"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Section: Contact Info with Icons -->
+                <div class="footer-right">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone-alt"></i> (+91) 982 0225 304</p>
+                    <p><i class="fas fa-envelope"></i> info@sacpglobal.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Suite 1101 ORION - 1, Kavesar,
+                        GB Road, Thane 400615, India </p>
+                </div>
             </div>
-    
-            <!-- Right Section: Contact Info with Icons -->
-            <div class="footer-right">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-phone-alt"></i> (+91) 982 0225 304</p>
-                <p><i class="fas fa-envelope"></i> info@sacpglobal.com</p>
-                <p><i class="fas fa-map-marker-alt"></i>Suite 1101 ORION - 1, Kavesar, 
-                                                        GB Road, Thane 400615, India </p>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- Animated Text JS -->
+        </footer>
+    </div>
+
+    <!-- Animated Text JS ------------------------------------------------------- -->
     <script src="../Scripts/HomeScripts.js"></script>
 
-
 </body>
+
 </html>
