@@ -453,6 +453,7 @@ body {
         object-fit: cover;
         border-radius: 20px;
         position: relative;
+        transition: transform 0.1s ease-in-out;
     }
     
     .about-us .images img:nth-child(2) {
@@ -480,7 +481,9 @@ body {
         margin-left: -100px;
         z-index: 3;
     }
-    
+    .about-us .images img:hover{
+        transform: scale(1.02);
+    }
     .about-us .text {
         margin-right: 50px;
         margin-top: 100px;

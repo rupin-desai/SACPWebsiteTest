@@ -258,6 +258,11 @@ body {
         max-width: 50vw;
         height: auto;
         border-radius: 20px;
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .our-mission .image img:hover{
+        transform: scale(1.01);
     }
 
     .our-mission h1 {

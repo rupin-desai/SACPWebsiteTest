@@ -263,6 +263,7 @@ body {
         grid-template-rows: auto;
         gap: 15px;
         position: relative;
+        
     }
 
     .about-us .images img {
@@ -271,6 +272,10 @@ body {
         object-fit: cover;
         border-radius: 20px;
         position: relative;
+        transition: transform 0.1s ease-in-out;
+    }
+    .about-us .images img:hover{
+        transform: scale(1.02);
     }
 
     .about-us .images img:nth-child(2) {
@@ -703,6 +708,10 @@ body {
         max-width: 50vw;
         height: auto;
         border-radius: 20px;
+        transition: transform 0.1s ease-in-out;
+    }
+    .our-mission .image img:hover{
+        transform: scale(1.01);
     }
 
     .our-mission h1 {
