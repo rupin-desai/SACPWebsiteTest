@@ -197,12 +197,17 @@ body {
     .nav a[href="../Pages/ContactUsPage.html"] {
         text-transform: none;
     }
+    .nav a[href="../Pages/CareersPage.html"] {
+        text-transform: none;
+    }
 }
 
 }
 
 
 /* Services Section ------------------------------------------------------- */
+/* Service Section Title */
+
 .our-services-section{
     .service-details {
         padding: 50px 30px;
@@ -210,7 +215,19 @@ body {
         text-align: center;
         display: none; /* Initially hidden */
     }
+    /* Service Section Title */
+    .services-title-container {
+        padding-top: 40px;
+        text-align: center; /* Center the title */
+        background-color: #f8f9fa;
+    }
     
+    /* Service Section Title */
+    .services-title {
+        font-size: 25px;
+        font-weight: 400;
+        color: var(--blue-dark); /* You can update this to your preferred color */
+    }
     .service-detail-title {
         font-size: 2rem;
         font-weight: bold;

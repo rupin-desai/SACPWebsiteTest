@@ -49,6 +49,8 @@
                 </div>
                 <div class="dropdown">
                     <a href="../Pages/CareersPage.html" class="home-link">Careers</a>
+                    <div class="dropdown-content">
+                    </div>
                 </div>
                 <div class="dropdown">
                     <a href="../Pages/ContactUsPage.html">Contact</a>
@@ -59,49 +61,86 @@
         </header>
     </div>
 
-    <!-- About Us Section ------------------------------------------------------- -->
-    <div class="about-us-section">
-        <section class="about-us" id="about">
-            <!-- <h2>Who are we?</h2>
-            <h3>Where it starts: Discovering purpose, Delivering Experience</h3> -->
+    <!-- Our Mission Section ------------------------------------------------------- -->
+    <div class="our-mission-section">
+        <section class="our-mission" id="mission">
+            <h2>CAREERS WITH US<i class="material-icons">arrow_outward</i></h2>
+            <!-- Moved the h2 outside the .text container -->
             <div class="container">
-
-                <div class="text">
-
-                    <h4>ABOUT US<i class="material-icons">arrow_outward</i></h4>
-                    <h1>Embedded Partnerships,</h1>
-                    <h1 class="about-us-subtext">Tranformative Journey Ahead Together</h1>
-                    <div class="two-columns">
-
-                        <div class="column">
-                            <h5><i class="material-icons">check_box</i>Experienced Pioneers</h5>
-                            <p class="left">Led by industry veterans with senior-level expertise from global giants like
-                                SAP, SACP leverages over a decade of excellence
-                                to drive impactful initiatives and deliver measurable results.</p>
-                        </div>
-                        <div class="column">
-                            <h5><i class="material-icons">check_box</i>Prestigious Collaborations</h5>
-                            <p class="right">SACP, partnered with top-tier organizations like Capgemini and Alta Via
-                                globally,
-                                excels in forming specialized Customer Extension Teams (CET) that seamlessly integrate
-                                with
-                                our clients' teams. With expertise in SAP and NetSuite initiatives,
-                                we have successfully delivered challenging projects worldwide.</p>
-                        </div>
-
-                    </div>
-                    <a href="../Pages/AboutUsPage.html" class="learn-more-button">Learn More</a>
-
+                <div class="image">
+                    <img src="../Assests/Aboutus_second.png" alt="Image">
                 </div>
-                <div class="images">
-                    <img src="../Assests/topleft.png" alt="Image 1">
-                    <img src="../Assests/top-right.png" alt="Image 2">
-                    <img src="../Assests/bottom-left.png" alt="Image 3">
-                    <img src="../Assests/bottom-right.png" alt="Image 4">
+                <div class="text">
+                    <h1><span class="mission-subtext">Building Impactful  </span>
+                        Transformations, Together</h1>
+                    <p class="intro">Join our team and transform businesses with innovation. As a 
+                        NetSuite/SAP Consultant or AI/ML Specialist, tackle challenges, optimize systems, and drive growth.
+                        Deliver solutions that enhance capabilities and ensure global success. Redefine 
+                        possibilities with us!
+                    </p>
                 </div>
             </div>
         </section>
     </div>
+
+
+    <!-- Service Cards Section -->
+    <div class="our-services-section">
+        <section class="services-section">
+            <div class="service-card " data-service="netsuite">
+                <i class="fas fa-cloud"></i>
+                <h3>Netsuite Consultants</h3>
+                <p>We play the role of NetSuite specialists in your esteemed project.</p>
+                <div class="additional-info">
+                    <strong>Experience:</strong> 5-10 years<br>
+                    <strong>Location:</strong> Remote
+                </div>
+                <div class="learn-more">
+                    <a class="apply-now" href="https://docs.google.com/forms/d/e/1FAIpQLSeiJ_H51gnJ2JyXerfVaMxBn1elS2DGErdmxZeQHVyvegfT8g/viewform?usp=dialog">
+                        Apply Now</a>
+                </div>
+            </div>
+
+            <div class="service-card" data-service="sap">
+                <i class="fas fa-cogs"></i>
+                <h3>SAP Consultants</h3>
+                <p>Harness the full capabilities of SAP with our team of professional consultants.</p>
+                <div class="additional-info">
+                    <strong>Experience:</strong> 5-10 years<br>
+                    <strong>Location:</strong> Remote
+                </div>
+                <div class="learn-more">
+                    <a class="apply-now" href="https://docs.google.com/forms/d/e/1FAIpQLSeiJ_H51gnJ2JyXerfVaMxBn1elS2DGErdmxZeQHVyvegfT8g/viewform?usp=dialog">
+                        Apply Now</a>
+                    </div>
+            </div>
+
+            <div class="service-card" data-service="ai">
+                <i class="fas fa-brain"></i>
+                <h3>AI & ML Specialists</h3>
+                <p>Empowering your business with elite AI/ML professionals seamlessly embedded to drive innovation,
+                    efficiency, and transformation.</p>
+                <div class="additional-info">
+                    <strong>Experience:</strong> 5-10 years<br>
+                    <strong>Location:</strong> Remote
+                </div>
+                <div class="learn-more">
+                    <a class="apply-now" href="https://docs.google.com/forms/d/e/1FAIpQLSeiJ_H51gnJ2JyXerfVaMxBn1elS2DGErdmxZeQHVyvegfT8g/viewform?usp=dialog">
+                        Apply Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Details Section -->
+        <section class="service-details" id="service-details">
+            <div id="service-title" class="service-detail-title">SAP Consultants</div>
+            <div id="service-description" class="service-detail-description"></div>
+        </section>
+    </div>
+
+
+
+
 
 
     <!-- Footer Section ------------------------------------------------------- -->
@@ -152,6 +191,10 @@
         </footer>
     </div>
 
+    <!-- Replace with the latest EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="../Scripts/CareersScripts.js"></script>
 </body>
 
 </html>

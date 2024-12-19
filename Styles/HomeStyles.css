@@ -201,6 +201,9 @@ body {
     .nav a[href="../Pages/ContactUsPage.html"] {
         text-transform: none;
     }
+    .nav a[href="../Pages/CareersPage.html"] {
+        text-transform: none;
+    }
 }
 }
 
